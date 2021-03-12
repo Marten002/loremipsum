@@ -1,0 +1,97 @@
+@import '../index';
+
+.progress {
+    position: relative;
+
+    &__caption {
+        display: flex;
+        justify-content: space-between;
+
+        margin-bottom: 10px;
+
+        span {
+            font-family: $font-lato;
+
+            color: $color-white;
+
+            font-size: 18px;
+            font-weight: 400;
+
+            @media only screen and (max-width: 768px) {
+                font-size: 16px;
+            }
+
+            &:nth-child(2) {
+                font-weight: 600;
+
+                @media only screen and (max-width: 425px) {
+                    padding: 0 0 0 50px;
+                }
+            }
+        }
+    }
+
+    .form__range {
+        width: 100%;
+
+        background-color: transparent;
+
+        -webkit-appearance: none;
+    }
+
+    .rangeSlider {
+        position: relative;
+
+        background-color: rgba($color-white, 0.7);
+
+        display: block;
+
+        border-radius: 10px;
+        border: 1px solid $color-white;
+
+        &__fill {
+            display: block;
+
+            border-radius: 10px;
+        }
+
+        &__horizontal {
+            height: 6px;
+            width: 98%;
+
+            margin: 0 auto;
+        }
+
+        &__fill {
+            position: absolute;
+
+            &__horizontal {
+                height: 100%;
+
+                top: 0;
+                left: 0;
+            }
+        }
+
+        &__handle {
+            border-radius: 50%;
+            border: 3px solid $color-blue--middle;
+
+            cursor: pointer;
+
+            display: inline-block;
+
+            width: 22px;
+            height: 22px;
+
+            position: absolute;
+            left: -1px;
+
+            background-color: $color-blue;
+
+            &__horizontal {
+                top: -10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+@import '../index';
+
+.headline {
+    font-family: $font-lato;
+
+    &--business {
+        max-width: 750px;
+
+        margin-top: 130px;
+
+        @media only screen and (max-width: 425px) {
+            margin-top: 60px;
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 64px;
+
+            color: $color-blue;
+
+            @media only screen and (max-width: 425px) {
+                font-size: 38px;
+                line-height: 54px;
+            }
+
+            span {
+                color: $color-black;
+            }
+        }
+    }
+
+    &--order {
+        text-align: center;
+        
+        h2 {
+            font-size: 36px;
+            line-height: 43px;
+            font-weight: 800;
+
+            color: $color-white;
+
+            span {
+                color: $color-blue;
+            }
+        }
+    }
+}

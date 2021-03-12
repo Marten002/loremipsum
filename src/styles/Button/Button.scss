@@ -1,0 +1,74 @@
+@import '../index';
+
+.button {
+    border-radius: 4px;
+    border: none;
+
+    cursor: pointer;
+
+    font-family: $font-lato;
+    
+    &--link {
+        display: block;
+
+        text-decoration: none;
+
+        font-weight: 400;
+        font-size: 13px;
+
+        padding: 13px 58px;
+
+        margin-right: 30px;
+        margin-top: 76px;
+
+        @media only screen and (max-width: 500px) {
+            margin-right: 0;
+            margin-top: 30px;
+
+            padding: 13px 0;
+
+            flex: 1;
+
+            text-align: center;
+
+            &:first-of-type {
+                margin-right: 30px;
+            }
+        }
+    }
+
+    &--blue {
+        background-color: $color-blue;
+
+        color: $color-white;
+    }
+
+    &--white {
+        border: 1px solid $color-grey--light;
+
+        background-color: $color-white;
+
+        color: $color-black;
+    }
+
+    &--form {
+        margin-top: 70px;
+
+        padding: 15px 140px;
+
+        font-weight: 600;
+        font-size: 15px;
+
+        border: 1px solid $color-white;
+
+        @media only screen and (max-width: 768px) {
+            margin-top: 30px;
+        }
+
+        @media only screen and (max-width: 425px) {
+            width: 100%;
+
+            padding: 15px 0;
+        }
+    }
+}

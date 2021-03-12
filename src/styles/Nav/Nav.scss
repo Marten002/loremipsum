@@ -1,0 +1,55 @@
+@import '../index';
+
+.nav {
+    font-family: $font-lato;
+    font-weight: 600;
+
+    &__list {
+        display: flex;
+
+        &--active {
+            background-color: rgba(16, 16, 29, 0.9);
+
+            width: 100%;
+
+            flex-direction: column;
+
+            position: absolute;
+            left: 0;
+            top: 100px;
+
+            .nav__item {
+                display: block;
+
+                margin: 0 !important;
+                padding: 20px 40px;
+
+                @media only screen and (max-width: 425px) {
+                    padding: 20px;
+                }
+            }
+        }
+    }
+
+    &__item {
+        margin-left: 55px;
+
+        @media only screen and (max-width: 900px) {
+            display: none;
+        }
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+
+        color: $color-white;
+
+        &--active {
+            color: $color-blue;
+        }
+    }
+}

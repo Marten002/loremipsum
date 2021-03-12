@@ -1,0 +1,26 @@
+/* _ Styles blocks */
+@import './reset';
+@import './fonts';
+@import './index';
+
+/* Component styles blocks */
+@import './Article/Article';
+@import './Button/Button';
+@import './Container/Container';
+@import './Description/Description';
+@import './File/File';
+@import './Footer/Footer';
+@import './Form/Form';
+@import './Hamburger/Hamburger';
+@import './Header/Header';
+@import './Headline/Headline';
+@import './Line/Line';
+@import './Logo/Logo';
+@import './Main/Main';
+@import './Nav/Nav';
+@import './Select/Select';
+@import './Track/Track';
+
+body {
+    position: relative;
+}

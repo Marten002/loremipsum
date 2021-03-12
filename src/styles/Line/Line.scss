@@ -1,0 +1,111 @@
+@import '../index';
+
+.line {
+    margin-top: 70px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 800px) {
+        max-width: 500px;
+
+        margin: 0 auto;
+
+        flex-wrap: wrap;
+    }
+
+    @media only screen and (max-width: 520px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__item {
+        max-width: 170px;
+
+        @media only screen and (max-width: 1440px) {
+            flex: 1;
+
+            max-width: 130px;
+        }
+
+        @media only screen and (max-width: 1024px) {
+            max-width: initial;
+
+            margin: 0 20px;
+
+            &:first-of-type {
+                margin-left: 0;
+            }
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+
+        @media only screen and (max-width: 800px) {
+            margin: 50px 25px 0 25px !important;
+
+            max-width: 160px;
+
+            flex: initial;
+        }
+    }
+
+    &__image {
+        width: 100px;
+        height: 100px;
+
+        background-color: $color-blue--light;
+
+        border: 5px solid $color-blue--middle;
+        border-radius: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: 0 auto;
+
+        i {
+            font-size: 30px;
+
+            color: $color-white;
+        }
+    }
+
+    &__description {
+        font-family: $font-lato;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+
+        color: $color-white;
+
+        text-align: center;
+
+        margin-top: 14px;
+
+        display: block;
+    }
+
+    &__dot {
+        margin-top: 50px;
+
+        @media only screen and (max-width: 1440px) {
+            padding: 0 20px;
+
+            flex: 1;
+
+            display: flex;
+            justify-content: center;
+
+            max-width: 130px;
+        }
+
+        @media only screen and (max-width: 1024px) {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+@import '../index';
+
+.description {
+    font-family: $font-lato;
+
+    &--business {
+        margin-top: 60px;
+
+        .description__item {
+            font-size: 20px;
+
+            @media only screen and (max-width: 425px) {
+                font-size: 18px;
+            }
+        }
+    }
+
+    &--order {
+        font-size: 18px;
+
+        text-align: center;
+
+        color: $color-white;
+
+        margin-top: 16px;
+    }
+
+    &__title {
+        font-weight: 700;
+
+        font-size: 20px;
+
+        @media only screen and (max-width: 425px) {
+            font-size: 18px;
+        }
+    }
+
+    &__list {
+        font-weight: 400;
+    }
+}

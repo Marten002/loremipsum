@@ -1,0 +1,28 @@
+.article {
+    width: 100%;
+
+    background-repeat: no-repeat;
+
+    &--business {
+        background-image: url('/dist/images/@x2/imageBusiness.png');
+        background-position: center top;
+        background-size: cover;
+
+        padding: 100px 0 190px 0;
+
+        @media only screen and (max-width: 425px) {
+            padding-bottom: 100px;
+        }
+    }
+
+    &--order {
+        background-image: url('/dist/images/@x2/imageOrder.png');
+        background-size: cover;
+
+        padding: 110px 0 140px 0;
+
+        @media only screen and (max-width: 425px) {
+            padding: 70px 0 100px 0;
+        }
+    }
+}
